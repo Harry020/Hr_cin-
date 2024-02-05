@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenue</title>
+    <link rel="stylesheet" href="Style.css">
+    <style>
+        .slideshow-container {
+          position: relative;
+          max-width: 100%;
+          text-align: center;
+        }
+        .slide {
+          display: none;
+        }
+        .slide img {
+          max-width: 100%;
+          height: auto;
+        }
+        .prev{
+            left: 0;
+        }
+        .prev, .next {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          cursor: pointer;
+        }
+        .next {
+          right: 0;
+        }
+      </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Hr.PNG" alt="" >
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="Acceuil.html">Acceuil</a></li>
+                <li><a href="Proposition.html">Proposition</a></li>
+                <li><a href="Sponsor.html">Sponsor</a></li>
+                <li><a href="A propos.html">A propos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br><br><br><br>
+
+    <div class="slideshow-container">
+      <div class="slide">
+        <div class="wprock-img-zoom-hover" >
+          <div class="wprock-img-zoom">
+        <img src="1.png">
+      </div>
+    </div>
+      </div>
+
+      <div class="slide">
+        <div class="wprock-img-zoom-hover" >
+          <div class="wprock-img-zoom">
+        <img src="2.png">
+      </div>
+    </div>
+      </div>
+      <div class="slide">
+        <div class="wprock-img-zoom-hover" >
+          <div class="wprock-img-zoom">
+        <img src="3.png">
+      </div>
+    </div>
+      </div>
+      <div class="slide">
+        <div class="wprock-img-zoom-hover" >
+          <div class="wprock-img-zoom">
+        <img src="4.png">
+      </div>
+    </div>
+      </div>
+      <div class="slide">
+        <div class="wprock-img-zoom-hover" >
+          <div class="wprock-img-zoom">
+        <img src="5.png">
+      </div>
+    </div>
+      </div>
+      <a style="color: aliceblue;" class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a style="color: aliceblue;"class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <script>
+      var slideIndex = 0;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function showSlides(n) {
+        var slides = document.getElementsByClassName("slide");
+        if (n >= slides.length) {slideIndex = 0}
+        if (n < 0) {slideIndex = slides.length - 1}
+        for (var i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slides[slideIndex].style.display = "block";
+      }
+    </script>
+<br>
+    <h1><pre> A VOIR DANS NOS SALLE DE CINEMA...</pre></h1>
+
+
+    <div class="image-grid">
+        <div>
+          <img src="Image1.png" alt="wpRock CSS - Zomm effect on image hover">
+
+          <div class="image-title">Oppenheimer</div>
+        </div>
+        <div>
+          <img src="Image2.png" alt="wpRock CSS - Zomm effect on image hover">
+
+          <div class="image-title">Barbie</div>
+        </div>
+        <div>
+
+          <img src="Image3.png" alt="wpRock CSS - Zomm effect on image hover">
+
+          <div class="image-title">Anatomie d'une chute</div>
+        </div>
+        <div>
+
+            <img src="Image4.PNG" alt="wpRock CSS - Zomm effect on image hover">
+
+            <div class="image-title">Nouveau riche</div>
+          </div>
+          <div>
+
+            <img src="Image5.PNG" alt="wpRock CSS - Zomm effect on image hover">
+
+            <div class="image-title">Les crocodiles</div>
+          </div>
+        <!-- Ajouter d'autres images avec leurs titres -->
+      </div>
+      <h1><pre>Découvrez vos classique préférée...</pre></h1>
+      <div class="image-grid">
+        <div>
+
+          <img src="11.PNG" alt="wpRock CSS - Zomm effect on image hover">
+
+          <div class="image-title">Sherlock</div>
+        </div>
+        <div>
+
+          <img src="22.PNG" alt="wpRock CSS - Zomm effect on image hover">
+
+          <div class="image-title">Star wars</div>
+        </div>
+        <div>
+
+          <img src="33.PNG" alt="wpRock CSS - Zomm effect on image hover">
+
+          <div class="image-title">BAD BOYS</div>
+        </div>
+        <div>
+
+            <img src="44.PNG" alt="wpRock CSS - Zomm effect on image hover">
+
+            <div class="image-title">Escape game</div>
+          </div>
+          <div>
+
+            <img src="55.PNG" alt="wpRock CSS - Zomm effect on image hover">
+          
+            <div class="image-title">Hotels transilvania</div>
+          </div>
+
+          <!-- picture>
+            <source media="(min-width: )" srcset="">
+            <img src="" alt="">
+          </picture>-->
+<br>
+    <br>
+
+<br>
+
+            <form action="">
+              <div style="display: flex;" class="Op">
+                <input type="search" placeholder="  Je recherche..."class="searchEX">
+                <input type="submit" value="Chercher" class="col">
+              </div>
+            </form>
+
+
+
+            <footer>
+              <p>&copy; 2024 Votre site en ligne pour le cinéma tous droits reservés. </p>
+          </footer>
+</body>
+</html>
