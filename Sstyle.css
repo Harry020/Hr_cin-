@@ -1,5 +1,5 @@
 * {
-    font-family: cursive;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, ;
 }
 body {
     font-family: 'Arial', sans-serif;
@@ -13,7 +13,7 @@ body {
 
 header {
     background-color: #333;
-    padding: 15px 20px;
+    padding: 0px 10px;
     width: 100%;
     top: 0;
     position: fixed;
@@ -92,3 +92,14 @@ main {
     -webkit-transform: scale(1.06);
     transform: scale(1.06);
 }
+
+/* footer {
+    background-color: #333;
+    padding: 30px 100em;
+    margin: 350px 0px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
